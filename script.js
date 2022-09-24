@@ -11,8 +11,8 @@ let today = document.querySelector(".today");
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}`)
     .then(res => res.json())
     .then(result =>{
-        title.innerHTML = result.title;
-        today.innerHTML = "Image Of " + result.date;
+        title.innerHTML = "Title : "+result.title;
+        today.innerHTML = "Date : " + result.date;
         image.src = result.url;
         description.innerHTML =result.explanation;
 });
