@@ -7,7 +7,7 @@ let today = document.querySelector(".today");
 
 
  function displayPicture() {
-    var key = config.SECRET_API_KEY;
+    var key = `YmUaptrzHgTrGDOVHuGDCXRRUIC80sQ4FcIkw5g4`;
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}`)
     .then(res => res.json())
     .then(result =>{
