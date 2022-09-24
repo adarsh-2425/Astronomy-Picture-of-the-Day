@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
+   
     
 }
 
@@ -17,39 +17,45 @@ body{
     text-align: center;
 }
 
-.title{
+.title, .today{
     font-weight: bold;
     margin-top: 3%;
-    margin-bottom: 2%;
     text-align: center;
    
 }
 
+
+
 .description{
-    margin-top: 3%;
+    margin-top: 5px;
     margin: 5px;
-    border: 2px solid black;   
+    border: 2px solid black; 
+    padding: 20px;  
+    word-spacing: 4px;
 }
 
-.image{
-    background-image: url('https://apod.nasa.gov/apod/image/2209/NeptuneTriton_webb1059.png');
-    width: 100vw; /* or any custom size */
-    height: 900px;
+#spacepicture{
+    width: 100vw; 
+    height: 500px;
     object-fit: contain;
+    margin: 10px;
     
 }
 
 p{
-    padding: 10px;
+    padding: 20px;
 }
 
 .button{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+/* for making inline items in next line */
+
     margin-left: 45%;
     margin-bottom: 2%;
     margin-top: 2%;
+    
 }
 
 
